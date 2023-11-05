@@ -4,8 +4,8 @@
 
 void main()
 {
-    printf("Current month: November");
-
+    printf("\t\tCurrent month: November");
+    printf("\n ");
     printf("\nSun\tMon\tTue\tWed\tThur\tFri\tSat\n");
     printf("\t\t\t1\t2\t3\t4\n");
     printf("5\t6\t7\t7\t8\t9\t10\n");
