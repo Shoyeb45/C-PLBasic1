@@ -6,10 +6,10 @@ void main()
     printf("Please enter your sex:");
     scanf("%c", & s);
     
-    int money = 780 ;
+    int money = 1780 ;
     
     if( s == 'm' || s == 'f' || s == 't' || s == 'M' || s == 'F' || s == 'T') {
-    	int age;
+    int age;
     printf("Please enter your age:");
     scanf("%d", & age);
         
