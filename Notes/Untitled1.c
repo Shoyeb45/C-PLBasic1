@@ -2,7 +2,6 @@
 
 void main()
 {
-	int a =0 ;
-	int b = -3 ;
-	printf("%d", a ||b);
+	int a = srand(time()) ;
+	printf("%d", a);
 }
