@@ -5,7 +5,7 @@ then predict your fortune , which is set up in switch.*/
 
 void main()
 {
-    int Fortune_Number;
+    int Fortune_Number = 0;
         Fortune_Number = (srand() % 4) + 1 ;
      
     switch(Fortune_Number){
@@ -19,8 +19,9 @@ void main()
         break;
     } 
 
-        pritnf("\nLucky lotto numbers: ");
-                int Lucky_Number = (srand() % 49)+1 ;
+        printf("\nLucky lotto numbers: ");
+                int Lucky_Number = 0;
+               Lucky_Number = (srand() % 49)+1 ;
          
             for( int i=1 ; i<=6 ; i++){
                 printf("%d ",Lucky_Number);
