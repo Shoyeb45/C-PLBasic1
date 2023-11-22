@@ -1,30 +1,31 @@
+//Q 8
+
 #include<stdio.h>
 
 void main()
 {
-    int item ,response;
-    int a,b,c,d,e;
+    int item ,response,totalMoney=0;
 
-    printf("\tHere's a menu:\nItem1:100\nItem2:200\nItem3:300\nItem4:350\nItem5:400\nItem6:450\n\t***");
+    printf("\tHere's a menu:\nItem 1:100\nItem 2:200\nItem 3:300\nItem 4:350\nItem 5:400\nItem 6:450\n\t***");
     do
     {
       printf("\nPlease choose item from menu:");
       scanf("%d", & item);  
      switch(item){
-        case 1:  a = 100;
+        case 1:  totalMoney += 100;
         break;
-        case 2:  b = 200;
+        case 2:  totalMoney += 200;
         break;
-        case 3:  c = 300;
+        case 3:  totalMoney += 300;
         break;
-        case 4:  c = 350;
+        case 4:  totalMoney += 350;
         break;
-        case 5:  d = 400;
+        case 5:  totalMoney += 400;
         break;
-        case 6:  e = 450;
+        case 6:  totalMoney += 450;
         break;
         default:
-        printf("\nPlease choose valid item.");
+        printf("\nPlease choose valid item.\n");
      }
       printf("Do you wish to order any other item(Press 1 for yes and 0 for no):");
       scanf("%d",& response);
@@ -32,10 +33,11 @@ void main()
       
     } 
     while (response==1);
+    printf("\nTotal payable amount:%d",totalMoney);
 
-        if((a+b+c+d+e)>2000){
-            printf("You don't have budget./n Unsafe");
+        if(totalMoney>2000){
+            printf("\nYou don't have budget.\n Unsafe \nYour friend has to pay extra %d",totalMoney-2000);
         }else{
-            printf("You have budget.\nYou are safe");
-        }
+            printf("\nYou have budget.\nYou are safe");
+        } 
     }
