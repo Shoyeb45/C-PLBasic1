@@ -26,7 +26,7 @@ void main()
         default:
         printf("\nPlease choose valid item.");
      }
-      printf("Do you wish to order any other item(Press 1 for yes and 0 for n0):");
+      printf("Do you wish to order any other item(Press 1 for yes and 0 for no):");
       scanf("%d",& response);
       
       
