@@ -2,22 +2,15 @@
 
 void main()
 {
-    int item ,response;;
+    int item ,response;
+    int a,b,c,d,e;
+
     printf("\tHere's a menu:\nItem1:100\nItem2:200\nItem3:300\nItem4:350\nItem5:400\nItem6:450\n\t***");
     do
     {
       printf("\nPlease choose item from menu:");
       scanf("%d", & item);  
-     
-      printf("Do you wish to order any other item(Press 1 for yes and 0 for no):");
-      scanf("%d", response);
-      
-      
-    } 
-    while (response>0);
-  
-  int a,b,c,d,e;
-    switch(item){
+     switch(item){
         case 1:  a = 100;
         break;
         case 2:  b = 200;
@@ -32,6 +25,13 @@ void main()
         break;
         default:
         printf("\nPlease choose valid item.");
+     }
+      printf("Do you wish to order any other item(Press 1 for yes and 0 for n0):");
+      scanf("%d",& response);
+      
+      
+    } 
+    while (response==1);
 
         if((a+b+c+d+e)>2000){
             printf("You don't have budget./n Unsafe");
@@ -39,4 +39,3 @@ void main()
             printf("You have budget.\nYou are safe");
         }
     }
-}
