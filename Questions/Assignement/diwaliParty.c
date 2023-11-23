@@ -1,5 +1,4 @@
-//5.contset in c
-
+//6.diwali party
 #include<stdio.h>
 
 void main()

@@ -1,4 +1,4 @@
-//Q 6. Series
+//Q 7. Series
 
 #include<stdio.h>
 
