@@ -2,11 +2,13 @@
 
 #include<stdio.h>
 
+
 void main()
 {
 	int iResponse, iRandom = 0 ;
 	
-	iRandom = (srand() % 10) + 1 ; 
+	
+	iRandom = srand() % 10 + 1 ;  //Taking number from 1 to 10
 	
 	printf("Guess the number between 1 to 10:");
 	scanf("%d", & iResponse);

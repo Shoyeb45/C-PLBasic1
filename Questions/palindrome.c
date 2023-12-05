@@ -2,17 +2,13 @@
 
 void main()
 {
-    int n,remainder , rev=0 ;
-    printf("Please enter number:");
-    scanf("%d", &n);
+    int n,r,sum=0;
+    printf("Enter the number:");
+    scanf("%d",&n);
 
-    for(int i=n ; i>1 ;i=i/10){
-        remainder = i % 10;
-        printf("%d",remainder);
+    for(int i=n ;i>0 ; i/=10 ){
+        r=i%10;
+        sum=(sum*10)+r;
     }
-
-    printf("%d",  rev);
-
-
-
+    printf("%d",sum);
 }
