@@ -1,15 +1,19 @@
 //C program that prompts a user to guess a number from 1 to 10
 
 #include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
 
 
 void main()
 {
-	int iResponse, iRandom = 0 ;
+	int iResponse, iRandom ;
+	float y=1.2;
+	double x = abs(y);
+	printf("%lf",x);
 	
-	
-	iRandom = srand() % 10 + 1 ;  //Taking number from 1 to 10
-	
+ srand(time(NULL)) ;  //Taking number from 1 to 10
+	iRandom=rand()%10+1;
 	printf("Guess the number between 1 to 10:");
 	scanf("%d", & iResponse);
 
