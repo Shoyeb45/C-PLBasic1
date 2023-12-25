@@ -1,7 +1,15 @@
 #include<stdio.h>
+#include<time.h>
 
 int main()
 {
-    int a=9;
-     printf("%d %d %d",a=a+1, a-9,a*(a)/3   );
+    int a=9, b=1, c=-8;
+
+
+a*=b+c;
+printf("\n%d",a);
+a=32%63;
+printf("\n%d",a);
+
+printf("%d", time(NULL));
 }

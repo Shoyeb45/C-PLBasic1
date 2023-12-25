@@ -1,1 +1,1 @@
-srand
+    //  printf("%d %d %d",a=a+1, a-9,a*(a)/3   );

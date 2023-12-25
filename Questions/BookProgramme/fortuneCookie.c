@@ -3,6 +3,7 @@ then predict your fortune , which is set up in switch.*/
 
 #include<stdio.h>
 
+
 void main()
 {
     int Fortune_Number = 0;
